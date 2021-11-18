@@ -1,0 +1,117 @@
+body {
+    background-color: rgb(248, 222, 222);
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: peru;
+    padding: 0.5rem 0;
+    border-radius: 8px;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+  .header a {
+      color: black;
+      text-decoration: none;
+  }
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+     .navigation ul li {
+         display: inline-block;
+     }
+         .navigation ul li a {
+              /*Animación para cuando pases el mouse por el nav*/
+              display: block; 
+              padding: 0.7rem 1rem;
+              transition: all 0.2s linear; 
+              border-radius: 5px;
+          }
+             .navigation ul li a:hover {
+                 background: coral;
+             }
+
+.main {
+    padding: 9rem;
+}
+
+.box {
+    display: flex;
+    background-color: goldenrod;
+    padding: 1em;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: auto;
+}
+
+.item {
+    margin-bottom: 3em;
+    border-radius: 1.5em;
+}
+
+     .item { 
+    display: block; 
+    padding: 1rem 1rem;
+    transition: all 0.2s linear; 
+  }
+
+          .item:hover {
+       background: black;
+   }
+
+
+.footer {
+    background: rgba(255, 160, 176, 0.295);
+    padding: 4rem 0;
+    text-align: center;
+    margin-top: 6rem;
+}
+
+/* Aquí está el responsive del header MODIFICAR */
+@media only screen and (max-width: 480px) {
+    .navigation ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+         .navigation ul li {
+             display: inline-block;
+         }
+             .navigation ul li a {
+                  display: block;
+                  padding: 0.5rem 1rem;
+                  transition: all 0.6s linear;
+                  border-radius: 5px;
+              }
+                 .navigation ul li a:hover {
+                     background: coral;
+                 }
+}
