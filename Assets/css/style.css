@@ -13,7 +13,7 @@ body {
 }
 
 .header {
-    background-color: peru;
+    background-color: rgb(240, 122, 3);
     padding: 0.5rem 0;
     border-radius: 8px;
 
@@ -31,6 +31,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    justify-content: center;
 }
 
 .navigation ul {
@@ -58,11 +59,13 @@ body {
 
 .box {
     display: flex;
-    background-color: goldenrod;
+    background-color: rgb(241, 157, 0);
     padding: 1em;
     border-radius: 5px;
     justify-content: center;
     align-items: center;
+    font-size: 2em;
+    box-shadow: 1px 1px 7px 7px #909090 ;
 }
 
 .cards {
@@ -79,12 +82,12 @@ body {
 
      .item { 
     display: block; 
-    padding: 1rem 1rem;
+    padding: 0.5rem 0.5rem;
     transition: all 0.2s linear; 
   }
 
           .item:hover {
-       background: black;
+       background: #909090;
    }
 
 
