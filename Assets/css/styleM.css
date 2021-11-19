@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(248, 222, 222);
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+img {
+    width: 50em;
+    margin-top: 7em;
+    margin-left: 7.5em;
+}
+
+.footer {
+    background: rgba(255, 160, 176, 0.295);
+    padding: 4rem 0;
+    margin-top: 6rem;
+}
