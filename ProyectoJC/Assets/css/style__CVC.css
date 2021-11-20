@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    background-color: rgb(248, 222, 222);
+}
+
+/*Caja principal del cv (hoja)*/
+.main-content {
+    min-height: 100vh;
+    width: 80%;
+    margin: 2rem auto;
+    background-color: cornflowerblue;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    box-shadow:  1px 1px 7px 7px #909090;
+}
+
+/*Estas son las separaciones principales de la hoja */
+.left-section {
+    grid-column: span 2;
+    height: 100%;
+    background-color: rgba(63, 0, 0, 0.849);
+}
+
+.left-content {
+    padding: 2rem 3rem;
+}
+
+/*Información del perfil*/
+.profile {
+    width: 100%;
+    border-bottom: 1px solid #fff; /*Rayita*/
+}
+
+.profile img {
+    width: 100%;
+    border-radius: 45%;
+    border: 2px solid rgb(19, 3, 3);
+}
+
+.name {
+    font-family: dosis;
+    font-size: 1.6rem;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase; /*Pone el texto en mayúscula*/
+    letter-spacing: 1px;
+    padding: 1.2rem 0;
+}
+
+.status {
+    font-family: dosis;
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 1.5rem;
+    padding-bottom: 1rem 0;
+}
+
+.main-title {
+    font-family: dosis;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    color: #fff;
+    padding-top: 2rem;
+}
+
+.contact-info ul{
+    padding-top: 1rem;
+}
+
+.contact-info ul li {
+    font-family: dosis;
+    padding: 0.01rem 0;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    color: #718096;
+}
+
+/*Habilidades*/
+.main-title {
+    text-align: center;
+    padding: 1.3em;
+}
+
+
+.skills-section ul li {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    font-family: dosis;
+}
+
+.skill-title {
+    color: #fff;
+    font-size: 1rem;
+    padding-right: 1rem;
+
+}
+
+.progress-bar {
+    width: 100%;
+    height: 0.4rem;
+    background-color: #718096;
+    position: relative;
+    border-radius: 2em;
+}
+
+.progress {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-color: #cf4c00 ;
+    border-radius: 2em;
+}
+
+/*Progreso en los lenguajes*/
+.ht-progress {
+    width: 80%;
+}
+
+.css-progress {
+    width: 70%;
+}
+
+.js-progress {
+    width: 10%;
+}
+
+.py-progress {
+    width: 17%;
+}
+
+.exc-progress {
+    width: 55%;
+}
+
+.eng-progress {
+    width: 60%;
+}
+
+.draw-progress {
+    width: 70%;
+}
+
+.sub-title {
+    font-family: dosis;
+    padding-top: 2rem;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.sub-career {
+    color: #ccc;
+}
+
+.references-section {
+    font-family: dosis;
+    color: #ccc;
+    padding: .1rem 0;
+}
+
+.references-section ul li {
+    font-family: dosis;
+    padding: 0.01rem 0;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    color: #718096;
+}
+
+.right-section {
+    grid-column: span 5;
+    background-color: #fff;
+    height: 100%;
+}
+
+.right-main--content {
+    padding: 2rem 3rem;
+}
+
+/*Sobre mi*/
+.right-title {
+    font-family: dosis;
+    letter-spacing: 1px;
+    color: rgba(63, 0, 0, 0.849);
+    font-size: dosis;
+    padding-bottom: 1.3rem;
+    position: relative;
+}
+
+.right-title::after {
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: .25rem;
+    background-color: rgba(63, 0, 0, 0.849);
+    right: 0;
+    top: 30%;
+    transform: translateY(-50%);
+    border-radius: 9px;
+   
+}
+
+.about {
+    padding-bottom: 2rem;
+
+}
+
+.paragraph {
+    line-height: 1.6rem;
+    color: #718096;
+    font-size: 1.1rem;
+}
+
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/*Experiencia y educación*/
+.timeline {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.tl.title {
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    font-size: dosis;
+    color: #000;
+}
+
+/*Rayita del timeline*/
+.tl-content {
+    padding-bottom: 2rem;
+    border-left: 1px solid #ccc;
+    padding-left: 2rem;
+    position: relative;
+}
+
+.tl.title-2 {
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    font-family: dosis;
+    color: #718096;
+}
+
+/*Bolita del timeline*/
+.tl-title-2::before {
+    content: "";
+    position: absolute;
+    width: .7rem;
+    height: .7rem;
+    background-color: rgba(87, 4, 4, 0.849);
+    border-radius: 50%;
+    transform: translateX(-50%);
+    left: 0;
+}
+
+/*Responsive*/
+@media screen and (max-width:1100px) {
+    .main-content {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+@media screen and (max-width:600px) {
+    .left-section {
+        grid-columns: span 3;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .profile img {
+        width: 70%;
+        margin-left: 2em;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .right-section {
+        grid-columns: span 4;
+    }
+}
+
+@media screen and (max-width:780px) {
+    .right-title::after {
+        width: 15%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .icons {
+        width: 5em;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .img-tech {
+        height: 25px;
+        padding-right: .2em;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .img-loup {
+        height: 25px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .img-pen {
+        height: 25px;
+        padding-left: .2em;
+    }
+}
+
+@media screen and (max-width:780px) {
+    .timeline {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
