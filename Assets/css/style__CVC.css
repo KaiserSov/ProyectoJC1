@@ -144,6 +144,14 @@ body {
     width: 55%;
 }
 
+.eng-progress {
+    width: 60%;
+}
+
+.draw-progress {
+    width: 70%;
+}
+
 .sub-title {
     font-family: dosis;
     padding-top: 2rem;
