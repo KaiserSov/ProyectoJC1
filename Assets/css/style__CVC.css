@@ -222,6 +222,12 @@ body {
     font-size: 1.1rem;
 }
 
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 /*Experiencia y educación*/
 .timeline {
     display: grid;
