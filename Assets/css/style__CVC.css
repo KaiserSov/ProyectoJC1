@@ -36,7 +36,7 @@ body {
 }
 
 .left-content {
-    padding: 1rem 3rem;
+    padding: 2rem 3rem;
 }
 
 /*Información del perfil*/
@@ -148,4 +148,40 @@ body {
 
 .exc-progress {
     width: 55%;
+}
+
+.sub-title {
+    font-family: dosis;
+    padding-top: 2rem;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.sub-career {
+    color: #ccc;
+}
+
+.references-section {
+    font-family: dosis;
+    color: #ccc;
+    padding: .1rem 0;
+}
+
+.references-section ul li {
+    font-family: dosis;
+    padding: 0.01rem 0;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    color: #718096;
+}
+
+.right-main--content {
+    padding: 2rem 3rem;
+}
+
+.right-title {
+    letter-spacing: 1px;
+    color: rgba(63, 0, 0, 0.849);
+    font-size: dosis;
 }
