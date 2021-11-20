@@ -205,12 +205,51 @@ body {
 
 .about {
     padding-bottom: 2rem;
-    
+
 }
 
 .paragraph {
     line-height: 1.6rem;
     color: #718096;
     font-size: 1.1rem;
+}
+
+.timeline {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.tl.title {
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    font-family: dosis;
+    color: #000;
+}
+
+/*Rayita del timeline*/
+.tl-content {
+    padding-bottom: 2rem;
+    border-left: 1px solid #ccc;
+    padding-left: 2rem;
+    position: relative;
+}
+
+.tl.title-2 {
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    font-family: dosis;
+    color: #718096;
+}
+
+/*Bolita del timeline*/
+.tl-title-2::before {
+    content: "";
+    position: absolute;
+    width: .7rem;
+    height: .7rem;
+    background-color: rgba(87, 4, 4, 0.849);
+    border-radius: 50%;
+    transform: translateX(-50%);
+    left: 0;
 }
 
