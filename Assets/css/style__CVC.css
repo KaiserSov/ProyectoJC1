@@ -19,6 +19,7 @@ body {
     background-color: cornflowerblue;
     display: grid;
     grid-template-columns: repeat(7,1fr);
+    box-shadow:  1px 1px 7px 7px #909090;
 }
 
 /*Estas son las separaciones principales de la hoja */
@@ -46,7 +47,7 @@ body {
 
 .profile img {
     width: 100%;
-    border-radius: 5%;
+    border-radius: 45%;
     border: 2px solid rgb(19, 3, 3);
 }
 
@@ -79,7 +80,7 @@ body {
 }
 
 .contact-info ul{
-    padding: 1rem 0;
+    padding-top: 1rem;
 }
 
 .contact-info ul li {
@@ -89,4 +90,62 @@ body {
     display: flex;
     align-items: center;
     color: #718096;
+}
+
+/*Habilidades*/
+.main-title {
+    text-align: center;
+    padding: 1.3em;
+}
+
+
+.skills-section ul li {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    font-family: dosis;
+}
+
+.skill-title {
+    color: #fff;
+    font-size: 1rem;
+    padding-right: 1rem;
+
+}
+
+.progress-bar {
+    width: 100%;
+    height: 0.4rem;
+    background-color: #718096;
+    position: relative;
+    border-radius: 2em;
+}
+
+.progress {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-color: #cf4c00 ;
+    border-radius: 2em;
+}
+
+/*Progreso en los lenguajes*/
+.ht-progress {
+    width: 80%;
+}
+
+.css-progress {
+    width: 70%;
+}
+
+.js-progress {
+    width: 10%;
+}
+
+.py-progress {
+    width: 17%;
+}
+
+.exc-progress {
+    width: 55%;
 }
