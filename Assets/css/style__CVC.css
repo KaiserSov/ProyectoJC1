@@ -214,6 +214,7 @@ body {
     font-size: 1.1rem;
 }
 
+/*Experiencia y educación*/
 .timeline {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
